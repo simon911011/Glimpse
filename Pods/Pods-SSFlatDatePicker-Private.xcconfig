@@ -1,0 +1,5 @@
+#include "Pods-SSFlatDatePicker.xcconfig"
+GCC_PREPROCESSOR_DEFINITIONS = COCOAPODS=1
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/BuildHeaders" "${PODS_ROOT}/BuildHeaders/SSFlatDatePicker" "${PODS_ROOT}/Headers" "${PODS_ROOT}/Headers/SSFlatDatePicker"
+OTHER_LDFLAGS = -ObjC ${PODS_SSFLATDATEPICKER_OTHER_LDFLAGS}
+PODS_ROOT = ${SRCROOT}

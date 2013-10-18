@@ -1,0 +1,1 @@
+PODS_SSFLATDATEPICKER_OTHER_LDFLAGS = -framework QuartzCore

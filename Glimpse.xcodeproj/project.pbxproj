@@ -1,0 +1,469 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		312D243659FD4AF194F1D900 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BE1026C7AC05446CBBA1ECA0 /* libPods.a */; };
+		66560FED17D2E15400BC93DF /* leftButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 66560FEC17D2E15400BC93DF /* leftButton.png */; };
+		66560FF317D2EBA700BC93DF /* rightButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 66560FF217D2EBA700BC93DF /* rightButton.png */; };
+		66560FF917D2EE3F00BC93DF /* navBar.png in Resources */ = {isa = PBXBuildFile; fileRef = 66560FF817D2EE3F00BC93DF /* navBar.png */; };
+		667CA65B17BEACDB008967C3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 667CA65A17BEACDB008967C3 /* UIKit.framework */; };
+		667CA65D17BEACDB008967C3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 667CA65C17BEACDB008967C3 /* Foundation.framework */; };
+		667CA65F17BEACDB008967C3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 667CA65E17BEACDB008967C3 /* CoreGraphics.framework */; };
+		667CA66117BEACDB008967C3 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 667CA66017BEACDB008967C3 /* CoreData.framework */; };
+		667CA66717BEACDC008967C3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 667CA66517BEACDC008967C3 /* InfoPlist.strings */; };
+		667CA66917BEACDC008967C3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 667CA66817BEACDC008967C3 /* main.m */; };
+		667CA66D17BEACDC008967C3 /* SLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 667CA66C17BEACDC008967C3 /* SLAppDelegate.m */; };
+		667CA67617BEACDC008967C3 /* Glimpses.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 667CA67417BEACDC008967C3 /* Glimpses.xcdatamodeld */; };
+		667CA68917BEAD6E008967C3 /* Day+Management.m in Sources */ = {isa = PBXBuildFile; fileRef = 667CA67D17BEAD6E008967C3 /* Day+Management.m */; };
+		667CA68A17BEAD6E008967C3 /* Days+Management.m in Sources */ = {isa = PBXBuildFile; fileRef = 667CA67F17BEAD6E008967C3 /* Days+Management.m */; };
+		667CA68B17BEAD6E008967C3 /* ModelUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 667CA68117BEAD6E008967C3 /* ModelUtil.m */; };
+		667CA68C17BEAD6E008967C3 /* SLDaysTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 667CA68317BEAD6E008967C3 /* SLDaysTableViewController.m */; };
+		667CA68D17BEAD6E008967C3 /* SLOptionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 667CA68517BEAD6E008967C3 /* SLOptionsViewController.m */; };
+		667CA68E17BEAD6E008967C3 /* SLPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 667CA68717BEAD6E008967C3 /* SLPhotoCell.m */; };
+		667CA68F17BEAD6E008967C3 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 667CA68817BEAD6E008967C3 /* Storyboard.storyboard */; };
+		667CA69417BEAEA0008967C3 /* Days.m in Sources */ = {isa = PBXBuildFile; fileRef = 667CA69117BEAE68008967C3 /* Days.m */; };
+		667CA69517BEAEA0008967C3 /* Day.m in Sources */ = {isa = PBXBuildFile; fileRef = 667CA69317BEAE68008967C3 /* Day.m */; };
+		667CA69717BEAEAC008967C3 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 667CA69617BEAEAC008967C3 /* AssetsLibrary.framework */; };
+		667CA69917BEB42A008967C3 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 667CA69817BEB42A008967C3 /* Icon.png */; };
+		667CA69B17BEB42D008967C3 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 667CA69A17BEB42D008967C3 /* Icon@2x.png */; };
+		667CA69D17BEB437008967C3 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 667CA69C17BEB437008967C3 /* Default.png */; };
+		667CA69F17BEB43D008967C3 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 667CA69E17BEB43D008967C3 /* Default@2x.png */; };
+		667CA6A117BEB442008967C3 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 667CA6A017BEB442008967C3 /* Default-568h@2x.png */; };
+		66A4F01217D3143600062D1F /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A4F01117D3143600062D1F /* UIImage+Resize.m */; };
+		66A4F01717D3ED0E00062D1F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66A4F01617D3ED0E00062D1F /* QuartzCore.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5EEECEB9E29243698FFF0888 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		66560FEC17D2E15400BC93DF /* leftButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leftButton.png; sourceTree = "<group>"; };
+		66560FF217D2EBA700BC93DF /* rightButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rightButton.png; sourceTree = "<group>"; };
+		66560FF817D2EE3F00BC93DF /* navBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = navBar.png; sourceTree = "<group>"; };
+		667CA65717BEACDB008967C3 /* Glimpse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Glimpse.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		667CA65A17BEACDB008967C3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		667CA65C17BEACDB008967C3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		667CA65E17BEACDB008967C3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		667CA66017BEACDB008967C3 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		667CA66417BEACDC008967C3 /* Glimpse-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Glimpse-Info.plist"; sourceTree = "<group>"; };
+		667CA66617BEACDC008967C3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		667CA66817BEACDC008967C3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		667CA66A17BEACDC008967C3 /* Glimpse-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Glimpse-Prefix.pch"; sourceTree = "<group>"; };
+		667CA66B17BEACDC008967C3 /* SLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLAppDelegate.h; sourceTree = "<group>"; };
+		667CA66C17BEACDC008967C3 /* SLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SLAppDelegate.m; sourceTree = "<group>"; };
+		667CA67517BEACDC008967C3 /* Glimpses.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Glimpses.xcdatamodel; sourceTree = "<group>"; };
+		667CA67C17BEAD6E008967C3 /* Day+Management.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Day+Management.h"; sourceTree = "<group>"; };
+		667CA67D17BEAD6E008967C3 /* Day+Management.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Day+Management.m"; sourceTree = "<group>"; };
+		667CA67E17BEAD6E008967C3 /* Days+Management.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Days+Management.h"; sourceTree = "<group>"; };
+		667CA67F17BEAD6E008967C3 /* Days+Management.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Days+Management.m"; sourceTree = "<group>"; };
+		667CA68017BEAD6E008967C3 /* ModelUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelUtil.h; sourceTree = "<group>"; };
+		667CA68117BEAD6E008967C3 /* ModelUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelUtil.m; sourceTree = "<group>"; };
+		667CA68217BEAD6E008967C3 /* SLDaysTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLDaysTableViewController.h; sourceTree = "<group>"; };
+		667CA68317BEAD6E008967C3 /* SLDaysTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLDaysTableViewController.m; sourceTree = "<group>"; };
+		667CA68417BEAD6E008967C3 /* SLOptionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLOptionsViewController.h; sourceTree = "<group>"; };
+		667CA68517BEAD6E008967C3 /* SLOptionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLOptionsViewController.m; sourceTree = "<group>"; };
+		667CA68617BEAD6E008967C3 /* SLPhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLPhotoCell.h; sourceTree = "<group>"; };
+		667CA68717BEAD6E008967C3 /* SLPhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLPhotoCell.m; sourceTree = "<group>"; };
+		667CA68817BEAD6E008967C3 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		667CA69017BEAE68008967C3 /* Days.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Days.h; sourceTree = "<group>"; };
+		667CA69117BEAE68008967C3 /* Days.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Days.m; sourceTree = "<group>"; };
+		667CA69217BEAE68008967C3 /* Day.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Day.h; sourceTree = "<group>"; };
+		667CA69317BEAE68008967C3 /* Day.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Day.m; sourceTree = "<group>"; };
+		667CA69617BEAEAC008967C3 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		667CA69817BEB42A008967C3 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		667CA69A17BEB42D008967C3 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		667CA69C17BEB437008967C3 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		667CA69E17BEB43D008967C3 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		667CA6A017BEB442008967C3 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		66A4F01017D3143600062D1F /* UIImage+Resize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Resize.h"; sourceTree = "<group>"; };
+		66A4F01117D3143600062D1F /* UIImage+Resize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Resize.m"; sourceTree = "<group>"; };
+		66A4F01617D3ED0E00062D1F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		BE1026C7AC05446CBBA1ECA0 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		667CA65417BEACDB008967C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66A4F01717D3ED0E00062D1F /* QuartzCore.framework in Frameworks */,
+				667CA65F17BEACDB008967C3 /* CoreGraphics.framework in Frameworks */,
+				667CA69717BEAEAC008967C3 /* AssetsLibrary.framework in Frameworks */,
+				667CA65B17BEACDB008967C3 /* UIKit.framework in Frameworks */,
+				667CA65D17BEACDB008967C3 /* Foundation.framework in Frameworks */,
+				667CA66117BEACDB008967C3 /* CoreData.framework in Frameworks */,
+				312D243659FD4AF194F1D900 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6669B74417BF33660006D057 /* Managed Object */ = {
+			isa = PBXGroup;
+			children = (
+				667CA69017BEAE68008967C3 /* Days.h */,
+				667CA69117BEAE68008967C3 /* Days.m */,
+				667CA69217BEAE68008967C3 /* Day.h */,
+				667CA69317BEAE68008967C3 /* Day.m */,
+			);
+			name = "Managed Object";
+			sourceTree = "<group>";
+		};
+		667CA64E17BEACDB008967C3 = {
+			isa = PBXGroup;
+			children = (
+				66A4F01617D3ED0E00062D1F /* QuartzCore.framework */,
+				667CA6A017BEB442008967C3 /* Default-568h@2x.png */,
+				667CA69E17BEB43D008967C3 /* Default@2x.png */,
+				667CA69C17BEB437008967C3 /* Default.png */,
+				667CA69A17BEB42D008967C3 /* Icon@2x.png */,
+				667CA69817BEB42A008967C3 /* Icon.png */,
+				66560FEC17D2E15400BC93DF /* leftButton.png */,
+				66560FF217D2EBA700BC93DF /* rightButton.png */,
+				66560FF817D2EE3F00BC93DF /* navBar.png */,
+				667CA66217BEACDB008967C3 /* Glimpse */,
+				667CA65917BEACDB008967C3 /* Frameworks */,
+				667CA65817BEACDB008967C3 /* Products */,
+				5EEECEB9E29243698FFF0888 /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		667CA65817BEACDB008967C3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				667CA65717BEACDB008967C3 /* Glimpse.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		667CA65917BEACDB008967C3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				667CA69617BEAEAC008967C3 /* AssetsLibrary.framework */,
+				667CA65A17BEACDB008967C3 /* UIKit.framework */,
+				667CA65C17BEACDB008967C3 /* Foundation.framework */,
+				667CA65E17BEACDB008967C3 /* CoreGraphics.framework */,
+				667CA66017BEACDB008967C3 /* CoreData.framework */,
+				BE1026C7AC05446CBBA1ECA0 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		667CA66217BEACDB008967C3 /* Glimpse */ = {
+			isa = PBXGroup;
+			children = (
+				6669B74417BF33660006D057 /* Managed Object */,
+				667CA67C17BEAD6E008967C3 /* Day+Management.h */,
+				667CA67D17BEAD6E008967C3 /* Day+Management.m */,
+				667CA67E17BEAD6E008967C3 /* Days+Management.h */,
+				667CA67F17BEAD6E008967C3 /* Days+Management.m */,
+				66A4F01017D3143600062D1F /* UIImage+Resize.h */,
+				66A4F01117D3143600062D1F /* UIImage+Resize.m */,
+				667CA68017BEAD6E008967C3 /* ModelUtil.h */,
+				667CA68117BEAD6E008967C3 /* ModelUtil.m */,
+				667CA68217BEAD6E008967C3 /* SLDaysTableViewController.h */,
+				667CA68317BEAD6E008967C3 /* SLDaysTableViewController.m */,
+				667CA68417BEAD6E008967C3 /* SLOptionsViewController.h */,
+				667CA68517BEAD6E008967C3 /* SLOptionsViewController.m */,
+				667CA68617BEAD6E008967C3 /* SLPhotoCell.h */,
+				667CA68717BEAD6E008967C3 /* SLPhotoCell.m */,
+				667CA68817BEAD6E008967C3 /* Storyboard.storyboard */,
+				667CA66B17BEACDC008967C3 /* SLAppDelegate.h */,
+				667CA66C17BEACDC008967C3 /* SLAppDelegate.m */,
+				667CA67417BEACDC008967C3 /* Glimpses.xcdatamodeld */,
+				667CA66317BEACDC008967C3 /* Supporting Files */,
+			);
+			path = Glimpse;
+			sourceTree = "<group>";
+		};
+		667CA66317BEACDC008967C3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				667CA66417BEACDC008967C3 /* Glimpse-Info.plist */,
+				667CA66517BEACDC008967C3 /* InfoPlist.strings */,
+				667CA66817BEACDC008967C3 /* main.m */,
+				667CA66A17BEACDC008967C3 /* Glimpse-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		667CA65617BEACDB008967C3 /* Glimpse */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 667CA67917BEACDC008967C3 /* Build configuration list for PBXNativeTarget "Glimpse" */;
+			buildPhases = (
+				0EEB27FF4A0E467A8CE81906 /* Check Pods Manifest.lock */,
+				667CA65317BEACDB008967C3 /* Sources */,
+				667CA65417BEACDB008967C3 /* Frameworks */,
+				667CA65517BEACDB008967C3 /* Resources */,
+				2B0D453189434EAFB7F70482 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Glimpse;
+			productName = Glimpses;
+			productReference = 667CA65717BEACDB008967C3 /* Glimpse.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		667CA64F17BEACDB008967C3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SL;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Shao-Ping Lee";
+			};
+			buildConfigurationList = 667CA65217BEACDB008967C3 /* Build configuration list for PBXProject "Glimpse" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 667CA64E17BEACDB008967C3;
+			productRefGroup = 667CA65817BEACDB008967C3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				667CA65617BEACDB008967C3 /* Glimpse */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		667CA65517BEACDB008967C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				667CA66717BEACDC008967C3 /* InfoPlist.strings in Resources */,
+				667CA68F17BEAD6E008967C3 /* Storyboard.storyboard in Resources */,
+				667CA69917BEB42A008967C3 /* Icon.png in Resources */,
+				667CA69B17BEB42D008967C3 /* Icon@2x.png in Resources */,
+				667CA69D17BEB437008967C3 /* Default.png in Resources */,
+				667CA69F17BEB43D008967C3 /* Default@2x.png in Resources */,
+				667CA6A117BEB442008967C3 /* Default-568h@2x.png in Resources */,
+				66560FED17D2E15400BC93DF /* leftButton.png in Resources */,
+				66560FF317D2EBA700BC93DF /* rightButton.png in Resources */,
+				66560FF917D2EE3F00BC93DF /* navBar.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0EEB27FF4A0E467A8CE81906 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2B0D453189434EAFB7F70482 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		667CA65317BEACDB008967C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				667CA69417BEAEA0008967C3 /* Days.m in Sources */,
+				667CA69517BEAEA0008967C3 /* Day.m in Sources */,
+				667CA66917BEACDC008967C3 /* main.m in Sources */,
+				667CA66D17BEACDC008967C3 /* SLAppDelegate.m in Sources */,
+				667CA67617BEACDC008967C3 /* Glimpses.xcdatamodeld in Sources */,
+				667CA68917BEAD6E008967C3 /* Day+Management.m in Sources */,
+				667CA68A17BEAD6E008967C3 /* Days+Management.m in Sources */,
+				667CA68B17BEAD6E008967C3 /* ModelUtil.m in Sources */,
+				667CA68C17BEAD6E008967C3 /* SLDaysTableViewController.m in Sources */,
+				667CA68D17BEAD6E008967C3 /* SLOptionsViewController.m in Sources */,
+				667CA68E17BEAD6E008967C3 /* SLPhotoCell.m in Sources */,
+				66A4F01217D3143600062D1F /* UIImage+Resize.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		667CA66517BEACDC008967C3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				667CA66617BEACDC008967C3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		667CA67717BEACDC008967C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Shao Ping Lee (T3LQ95726F)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
+				"OTHER_LDFLAGS[arch=*]" = "";
+				PROVISIONING_PROFILE = "628FC02B-14DF-492A-9683-10136BBEBFE4";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		667CA67817BEACDC008967C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Shao Ping Lee (T3LQ95726F)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = "";
+				PROVISIONING_PROFILE = "628FC02B-14DF-492A-9683-10136BBEBFE4";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		667CA67A17BEACDC008967C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5EEECEB9E29243698FFF0888 /* Pods.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Shao Ping Lee (NES2WQD786)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"/Volumes/Data/Downloads/Reveal.app/Contents/SharedSupport/iOS-Libraries\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Glimpse/Glimpse-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/Glimpse/Glimpse-Info.plist";
+				"OTHER_LDFLAGS[arch=*]" = "-Objc";
+				PRODUCT_NAME = Glimpse;
+				PROVISIONING_PROFILE = "9A0AA64C-1F9C-4861-9513-0D5ED9872D06";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		667CA67B17BEACDC008967C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5EEECEB9E29243698FFF0888 /* Pods.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Shao Ping Lee (NES2WQD786)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"/Volumes/Data/Downloads/Reveal.app/Contents/SharedSupport/iOS-Libraries\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Glimpse/Glimpse-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/Glimpse/Glimpse-Info.plist";
+				PRODUCT_NAME = Glimpse;
+				PROVISIONING_PROFILE = "9A0AA64C-1F9C-4861-9513-0D5ED9872D06";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		667CA65217BEACDB008967C3 /* Build configuration list for PBXProject "Glimpse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				667CA67717BEACDC008967C3 /* Debug */,
+				667CA67817BEACDC008967C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		667CA67917BEACDC008967C3 /* Build configuration list for PBXNativeTarget "Glimpse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				667CA67A17BEACDC008967C3 /* Debug */,
+				667CA67B17BEACDC008967C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		667CA67417BEACDC008967C3 /* Glimpses.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				667CA67517BEACDC008967C3 /* Glimpses.xcdatamodel */,
+			);
+			currentVersion = 667CA67517BEACDC008967C3 /* Glimpses.xcdatamodel */;
+			path = Glimpses.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 667CA64F17BEACDB008967C3 /* Project object */;
+}

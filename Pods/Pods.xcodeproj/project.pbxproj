@@ -1,0 +1,414 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		094E195E6CC547F2A38A8534 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E00CE253C89B421F85CE07D8 /* Foundation.framework */; };
+		495DC29D8F144E76B4C7985C /* SSFlatDatePicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 4746B38A86CD43B890EC563E /* SSFlatDatePicker.h */; };
+		81465045571F45299872192C /* Pods-SSFlatDatePicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BB89A2DE2754B74B6431800 /* Pods-SSFlatDatePicker-dummy.m */; };
+		D64208ACADB24426A6235D29 /* SSFlatDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 6175B7EB683745D3B4053C32 /* SSFlatDatePicker.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		EA413A6703774BB1836A13D1 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C98C306ADABF4B5EBF839A66 /* Pods-dummy.m */; };
+		F759E47B70354166AD2B2C83 /* libPods-SSFlatDatePicker.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96D45A52283C416C9EF9F796 /* libPods-SSFlatDatePicker.a */; };
+		FCE4A5C65FB541A2AFB1789E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E00CE253C89B421F85CE07D8 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7376A9D8B36047A78C76518D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAF81D652BAA450F802B3341 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DE6531E3E152481BAD06E3EC;
+			remoteInfo = "Pods-SSFlatDatePicker";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		17CD1B70DCEF47F2AEA9A318 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		35CA012141EB4B6BA2115419 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		3BB89A2DE2754B74B6431800 /* Pods-SSFlatDatePicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SSFlatDatePicker-dummy.m"; sourceTree = SOURCE_ROOT; };
+		3FA95117482D413C8AABF15F /* Pods-SSFlatDatePicker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SSFlatDatePicker.xcconfig"; sourceTree = SOURCE_ROOT; };
+		4746B38A86CD43B890EC563E /* SSFlatDatePicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSFlatDatePicker.h; path = SSFlatDatePicker/SSFlatDatePicker.h; sourceTree = SOURCE_ROOT; };
+		5913EEFA6E564365984A1AB1 /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = SOURCE_ROOT; };
+		5BA1B7F358664562BB3F5118 /* QuartzCore.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		5E6895B1FEAA4733927907C2 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = SOURCE_ROOT; };
+		6175B7EB683745D3B4053C32 /* SSFlatDatePicker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SSFlatDatePicker.m; path = SSFlatDatePicker/SSFlatDatePicker.m; sourceTree = SOURCE_ROOT; };
+		96D45A52283C416C9EF9F796 /* libPods-SSFlatDatePicker.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SSFlatDatePicker.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C98C306ADABF4B5EBF839A66 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = SOURCE_ROOT; };
+		E00CE253C89B421F85CE07D8 /* Foundation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		E7837E027ECB483B849026B2 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7D83FC2A6CD4D1BB850CD7E /* Pods-SSFlatDatePicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SSFlatDatePicker-prefix.pch"; sourceTree = SOURCE_ROOT; };
+		E8E6990F341E4CC18EB59047 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = SOURCE_ROOT; };
+		F715625E098C43D39944F580 /* Pods-SSFlatDatePicker-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SSFlatDatePicker-Private.xcconfig"; sourceTree = SOURCE_ROOT; };
+		FB619E7A57BA443C83963431 /* Pods-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-environment.h"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		48F49805B55E4E83B3A4E7F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				094E195E6CC547F2A38A8534 /* Foundation.framework in Frameworks */,
+				F759E47B70354166AD2B2C83 /* libPods-SSFlatDatePicker.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C14AD6B1862440A685B50BC1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCE4A5C65FB541A2AFB1789E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		24A8A5A1B5B04CFEACCA2CC3 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				403F82C08FC64E34887DD779 /* Pods-SSFlatDatePicker */,
+				F10F84096023440C907DF26F /* Pods */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		2F4847A715F847A1932AE565 = {
+			isa = PBXGroup;
+			children = (
+				73B6F610F35A4634A474F3A9 /* Frameworks */,
+				478D5A39CFB24566B34D01E6 /* Pods */,
+				4AB4657C6A814E00BED696C0 /* Products */,
+				24A8A5A1B5B04CFEACCA2CC3 /* Targets Support Files */,
+				17CD1B70DCEF47F2AEA9A318 /* Podfile */,
+			);
+			sourceTree = "<group>";
+		};
+		403F82C08FC64E34887DD779 /* Pods-SSFlatDatePicker */ = {
+			isa = PBXGroup;
+			children = (
+				3FA95117482D413C8AABF15F /* Pods-SSFlatDatePicker.xcconfig */,
+				F715625E098C43D39944F580 /* Pods-SSFlatDatePicker-Private.xcconfig */,
+				E7D83FC2A6CD4D1BB850CD7E /* Pods-SSFlatDatePicker-prefix.pch */,
+				3BB89A2DE2754B74B6431800 /* Pods-SSFlatDatePicker-dummy.m */,
+			);
+			name = "Pods-SSFlatDatePicker";
+			sourceTree = "<group>";
+		};
+		478D5A39CFB24566B34D01E6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E445C7276BB341A1A950D755 /* SSFlatDatePicker */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4AB4657C6A814E00BED696C0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				96D45A52283C416C9EF9F796 /* libPods-SSFlatDatePicker.a */,
+				E7837E027ECB483B849026B2 /* libPods.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		73B6F610F35A4634A474F3A9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E00CE253C89B421F85CE07D8 /* Foundation.framework */,
+				5BA1B7F358664562BB3F5118 /* QuartzCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E445C7276BB341A1A950D755 /* SSFlatDatePicker */ = {
+			isa = PBXGroup;
+			children = (
+				4746B38A86CD43B890EC563E /* SSFlatDatePicker.h */,
+				6175B7EB683745D3B4053C32 /* SSFlatDatePicker.m */,
+			);
+			name = SSFlatDatePicker;
+			sourceTree = "<group>";
+		};
+		F10F84096023440C907DF26F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				35CA012141EB4B6BA2115419 /* Pods.xcconfig */,
+				FB619E7A57BA443C83963431 /* Pods-environment.h */,
+				E8E6990F341E4CC18EB59047 /* Pods-resources.sh */,
+				5E6895B1FEAA4733927907C2 /* Pods-acknowledgements.plist */,
+				5913EEFA6E564365984A1AB1 /* Pods-acknowledgements.markdown */,
+				C98C306ADABF4B5EBF839A66 /* Pods-dummy.m */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		78665D6DBFCA4FF68FE688EB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				495DC29D8F144E76B4C7985C /* SSFlatDatePicker.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		DE6531E3E152481BAD06E3EC /* Pods-SSFlatDatePicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94F37F6444664937A0B0EBD7 /* Build configuration list for PBXNativeTarget "Pods-SSFlatDatePicker" */;
+			buildPhases = (
+				22DA67F10C6C41E28F0F32CF /* Sources */,
+				C14AD6B1862440A685B50BC1 /* Frameworks */,
+				78665D6DBFCA4FF68FE688EB /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-SSFlatDatePicker";
+			productName = "Pods-SSFlatDatePicker";
+			productReference = 96D45A52283C416C9EF9F796 /* libPods-SSFlatDatePicker.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		E3FEA3C8E65E4BF2BFBDD636 /* Pods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2642EB60F09544888B8769A4 /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildPhases = (
+				9D28BCA31D8A4A25BDA46FE3 /* Sources */,
+				48F49805B55E4E83B3A4E7F7 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E3D1C718B46444B384EBBD5A /* PBXTargetDependency */,
+			);
+			name = Pods;
+			productName = Pods;
+			productReference = E7837E027ECB483B849026B2 /* libPods.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FAF81D652BAA450F802B3341 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+			};
+			buildConfigurationList = 86CA7091DD84483D9FE4E777 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2F4847A715F847A1932AE565;
+			productRefGroup = 4AB4657C6A814E00BED696C0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DE6531E3E152481BAD06E3EC /* Pods-SSFlatDatePicker */,
+				E3FEA3C8E65E4BF2BFBDD636 /* Pods */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		22DA67F10C6C41E28F0F32CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D64208ACADB24426A6235D29 /* SSFlatDatePicker.m in Sources */,
+				81465045571F45299872192C /* Pods-SSFlatDatePicker-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D28BCA31D8A4A25BDA46FE3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA413A6703774BB1836A13D1 /* Pods-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E3D1C718B46444B384EBBD5A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DE6531E3E152481BAD06E3EC /* Pods-SSFlatDatePicker */;
+			targetProxy = 7376A9D8B36047A78C76518D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6104BCD50CA0405E89913426 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Release;
+		};
+		7FAAC25CAC36482E9A72A95D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F715625E098C43D39944F580 /* Pods-SSFlatDatePicker-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pods-SSFlatDatePicker-prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		B9540DA71FD94526826BEF50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F715625E098C43D39944F580 /* Pods-SSFlatDatePicker-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pods-SSFlatDatePicker-prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C04D4F5B074C44D082120141 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35CA012141EB4B6BA2115419 /* Pods.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		C5DBE4EE8EC94DEEBA80A362 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35CA012141EB4B6BA2115419 /* Pods.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CB7FBBB60FFF477683175F4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2642EB60F09544888B8769A4 /* Build configuration list for PBXNativeTarget "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5DBE4EE8EC94DEEBA80A362 /* Release */,
+				C04D4F5B074C44D082120141 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		86CA7091DD84483D9FE4E777 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6104BCD50CA0405E89913426 /* Release */,
+				CB7FBBB60FFF477683175F4F /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94F37F6444664937A0B0EBD7 /* Build configuration list for PBXNativeTarget "Pods-SSFlatDatePicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9540DA71FD94526826BEF50 /* Release */,
+				7FAAC25CAC36482E9A72A95D /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FAF81D652BAA450F802B3341 /* Project object */;
+}

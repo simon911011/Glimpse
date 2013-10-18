@@ -1,0 +1,10 @@
+PODS:
+  - SSFlatDatePicker (0.0.6)
+
+DEPENDENCIES:
+  - SSFlatDatePicker (= 0.0.6)
+
+SPEC CHECKSUMS:
+  SSFlatDatePicker: 8e46ecc6cee4a28472aaea0993b4a4e4e267f85a
+
+COCOAPODS: 0.22.2

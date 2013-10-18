@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2061" systemVersion="12E55" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Day" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="parent" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Days" inverseName="children" inverseEntity="Days" syncable="YES"/>
+    </entity>
+    <entity name="Days" syncable="YES">
+        <attribute name="round" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <relationship name="children" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Day" inverseName="parent" inverseEntity="Day" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Days" positionX="-45" positionY="5" width="128" height="73"/>
+        <element name="Day" positionX="232" positionY="101" width="128" height="103"/>
+    </elements>
+</model>
