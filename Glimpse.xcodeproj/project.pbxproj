@@ -8,9 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		312D243659FD4AF194F1D900 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BE1026C7AC05446CBBA1ECA0 /* libPods.a */; };
-		66560FED17D2E15400BC93DF /* leftButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 66560FEC17D2E15400BC93DF /* leftButton.png */; };
-		66560FF317D2EBA700BC93DF /* rightButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 66560FF217D2EBA700BC93DF /* rightButton.png */; };
-		66560FF917D2EE3F00BC93DF /* navBar.png in Resources */ = {isa = PBXBuildFile; fileRef = 66560FF817D2EE3F00BC93DF /* navBar.png */; };
 		667CA65B17BEACDB008967C3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 667CA65A17BEACDB008967C3 /* UIKit.framework */; };
 		667CA65D17BEACDB008967C3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 667CA65C17BEACDB008967C3 /* Foundation.framework */; };
 		667CA65F17BEACDB008967C3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 667CA65E17BEACDB008967C3 /* CoreGraphics.framework */; };
@@ -40,9 +37,6 @@
 
 /* Begin PBXFileReference section */
 		5EEECEB9E29243698FFF0888 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
-		66560FEC17D2E15400BC93DF /* leftButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leftButton.png; sourceTree = "<group>"; };
-		66560FF217D2EBA700BC93DF /* rightButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rightButton.png; sourceTree = "<group>"; };
-		66560FF817D2EE3F00BC93DF /* navBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = navBar.png; sourceTree = "<group>"; };
 		667CA65717BEACDB008967C3 /* Glimpse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Glimpse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		667CA65A17BEACDB008967C3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		667CA65C17BEACDB008967C3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -122,9 +116,6 @@
 				667CA69C17BEB437008967C3 /* Default.png */,
 				667CA69A17BEB42D008967C3 /* Icon@2x.png */,
 				667CA69817BEB42A008967C3 /* Icon.png */,
-				66560FEC17D2E15400BC93DF /* leftButton.png */,
-				66560FF217D2EBA700BC93DF /* rightButton.png */,
-				66560FF817D2EE3F00BC93DF /* navBar.png */,
 				667CA66217BEACDB008967C3 /* Glimpse */,
 				667CA65917BEACDB008967C3 /* Frameworks */,
 				667CA65817BEACDB008967C3 /* Products */,
@@ -252,9 +243,6 @@
 				667CA69D17BEB437008967C3 /* Default.png in Resources */,
 				667CA69F17BEB43D008967C3 /* Default@2x.png in Resources */,
 				667CA6A117BEB442008967C3 /* Default-568h@2x.png in Resources */,
-				66560FED17D2E15400BC93DF /* leftButton.png in Resources */,
-				66560FF317D2EBA700BC93DF /* rightButton.png in Resources */,
-				66560FF917D2EE3F00BC93DF /* navBar.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

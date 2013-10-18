@@ -54,20 +54,12 @@
     _date = [NSDate date];
     
     // Configure leftButton
-    UIButton *leftButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    leftButton.frame = CGRectMake(0, 0, 40, 40);
-    [leftButton setImage:[UIImage imageNamed:@"leftButton.png"] forState:UIControlStateNormal];
-    [leftButton addTarget:self action:@selector(menuPressed:) forControlEvents:UIControlEventTouchUpInside];
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:leftButton];
+    UIBarButtonItem *left = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:@selector(menuPressed:)];
+    self.navigationItem.leftBarButtonItem = left;
     
     // Configure rightButton
-    UIButton *rightButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    rightButton.frame = CGRectMake(0, 0, 40, 40);
-    [rightButton setImage:[UIImage imageNamed:@"rightButton.png"] forState:UIControlStateNormal];
-    [rightButton addTarget:self action:@selector(addAsset:) forControlEvents:UIControlEventTouchUpInside];
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:rightButton];
-    
-    
+    UIBarButtonItem *right = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:@selector(addAsset:)];
+    self.navigationItem.rightBarButtonItem = right;
 }
 
 - (void)menuPressed:(id)sender
@@ -252,7 +244,7 @@
     }
     cell.backgroundView.opaque = NO;
     cell.selectedBackgroundView.opaque = NO;
-    cell.backgroundColor = [UIColor blueColor];
+    //cell.backgroundColor = [UIColor blueColor];
 
     [self configureCell:cell atIndexPath:indexPath animated:YES];
     
@@ -475,22 +467,22 @@
     [[self.view viewWithTag:10] removeFromSuperview];
     [[self.view viewWithTag:12] removeFromSuperview];
     [[self.view viewWithTag:13] removeFromSuperview];
+    [[self.navigationController.view viewWithTag:99] removeFromSuperview];
 }
 
 - (void)dismissDatePicker {
     [self.navigationItem.leftBarButtonItem setEnabled:YES];
     [self.navigationItem.rightBarButtonItem setEnabled:YES];
     [self.navigationItem setTitle:@"Glimpse"];
+    UIView *reminderView = [self.navigationController.view viewWithTag:99];
     [self.tableView setScrollEnabled:YES];
     
-    CGRect datePickerTargetFrame = CGRectMake(0, self.view.bounds.size.height + self.view.bounds.origin.y, 320, 216);
-    CGRect clearTargetFrame = CGRectMake(0, -200, 320, 100);
-    CGRect setTargetFrame = CGRectMake(0, -100, 320, 100);
+    CGRect datePickerTargetFrame = CGRectMake(0, reminderView.bounds.size.height + reminderView.bounds.origin.y, 320, 216);
+    CGRect clearTargetFrame = CGRectMake(reminderView.bounds.origin.x, reminderView.bounds.origin.y-200, 320, 100);
+    CGRect setTargetFrame = CGRectMake(reminderView.bounds.origin.x, reminderView.bounds.origin.y-100, 320, 100);
 
     [UIView beginAnimations:@"MoveOut" context:nil];
-    [self.view viewWithTag:9].alpha = 0;
     [self.view viewWithTag:10].frame = datePickerTargetFrame;
-    //[self.view viewWithTag:11].frame = barTargetFrame;
     [self.view viewWithTag:12].frame = clearTargetFrame;
     [self.view viewWithTag:13].frame = setTargetFrame;
     [UIView setAnimationDelegate:self];
@@ -501,23 +493,23 @@
 - (void)callDP {
     [self.navigationItem setTitle:@"Daily Reminder"];
     [self.tableView setScrollEnabled:NO];
+    UIView *reminderView = [[UIView alloc] initWithFrame:self.view.frame];
+    reminderView.tag = 99;
+    [self.navigationController.view addSubview:reminderView];
     
-    CGRect pickerTargetFrame = CGRectMake(0, self.view.bounds.size.height+ self.view.bounds.origin.y-216, 320, 216);
-    //CGRect barTargetFrame = CGRectMake(0, self.view.bounds.size.height-216-100, 320, 100);
-    CGRect clearTargetFrame = CGRectMake(0, self.view.bounds.origin.y, 320, 100);
-    CGRect setTargetFrame = CGRectMake(0, self.view.bounds.origin.y+100, 320, 100);
+    CGRect pickerTargetFrame = CGRectMake(0, reminderView.bounds.size.height+ reminderView.bounds.origin.y-216, 320, 216);
+    CGRect clearTargetFrame = CGRectMake(0, reminderView.bounds.origin.y+64, 320, 100);
+    CGRect setTargetFrame = CGRectMake(0, reminderView.bounds.origin.y+164, 320, 100);
     
-    
-    
-    SSFlatDatePicker *picker = [[SSFlatDatePicker alloc] initWithFrame:CGRectMake(0, self.view.bounds.size.height + self.view.bounds.origin.y, 320, 216)];
+    SSFlatDatePicker *picker = [[SSFlatDatePicker alloc] initWithFrame:CGRectMake(0, reminderView.bounds.size.height + reminderView.bounds.origin.y, 320, 216)];
     picker.autoresizingMask = UIViewAutoresizingFlexibleWidth;
     picker.datePickerMode = SSFlatDatePickerModeTime;
     picker.tag = 10;
     [picker addTarget:self action:@selector(changeDate:) forControlEvents:UIControlEventValueChanged];
-    [self.view addSubview:picker];
+    [reminderView addSubview:picker];
         
     UIButton *clearView = [UIButton buttonWithType:UIButtonTypeCustom];
-    clearView.frame = CGRectMake(0, self.view.bounds.origin.y-200, 320, 100);
+    clearView.frame = CGRectMake(0, reminderView.bounds.origin.y-200, 320, 100);
     clearView.tag = 12;
     [clearView setTitle:@"Clear" forState:UIControlStateNormal];
     clearView.backgroundColor = [UIColor colorWithRed:205.0/255.0 green:55.0/255.0 blue:61.0/255.0 alpha:1.0];
@@ -525,10 +517,10 @@
     clearView.titleLabel.textColor = [UIColor whiteColor];
     clearView.titleLabel.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:40];
     [clearView addTarget:self action:@selector(clearPressed:) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:clearView];
+    [reminderView addSubview:clearView];
     
     UIButton *setView = [UIButton buttonWithType:UIButtonTypeCustom];
-    setView.frame = CGRectMake(0, self.view.bounds.origin.y-100, 320, 100);
+    setView.frame = CGRectMake(0, reminderView.bounds.origin.y-100, 320, 100);
     setView.tag = 13;
     [setView setTitle:@"Set" forState:UIControlStateNormal];
     setView.backgroundColor = [UIColor colorWithRed:22.0/255.0 green:160.0/255.0 blue:133.0/255.0 alpha:1.0];
@@ -536,7 +528,7 @@
     setView.titleLabel.textColor = [UIColor whiteColor];
     setView.titleLabel.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:40];
     [setView addTarget:self action:@selector(setPressed:) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:setView];
+    [reminderView addSubview:setView];
     
     
     
@@ -546,7 +538,6 @@
      
     [UIView beginAnimations:@"MoveIn" context:nil];
     picker.frame = pickerTargetFrame;
-    //barView.frame = barTargetFrame;
     clearView.frame = clearTargetFrame;
     setView.frame = setTargetFrame;
     [UIView commitAnimations];
