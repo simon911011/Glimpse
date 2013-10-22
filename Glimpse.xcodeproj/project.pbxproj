@@ -37,6 +37,7 @@
 
 /* Begin PBXFileReference section */
 		5EEECEB9E29243698FFF0888 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		6661C0311816217A004A2AB3 /* Glimpses 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Glimpses 2.xcdatamodel"; sourceTree = "<group>"; };
 		667CA65717BEACDB008967C3 /* Glimpse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Glimpse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		667CA65A17BEACDB008967C3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		667CA65C17BEACDB008967C3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -386,7 +387,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
-					"\"/Volumes/Data/Downloads/Reveal.app/Contents/SharedSupport/iOS-Libraries\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Glimpse/Glimpse-Prefix.pch";
@@ -406,7 +406,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
-					"\"/Volumes/Data/Downloads/Reveal.app/Contents/SharedSupport/iOS-Libraries\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Glimpse/Glimpse-Prefix.pch";
@@ -444,9 +443,10 @@
 		667CA67417BEACDC008967C3 /* Glimpses.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				6661C0311816217A004A2AB3 /* Glimpses 2.xcdatamodel */,
 				667CA67517BEACDC008967C3 /* Glimpses.xcdatamodel */,
 			);
-			currentVersion = 667CA67517BEACDC008967C3 /* Glimpses.xcdatamodel */;
+			currentVersion = 6661C0311816217A004A2AB3 /* Glimpses 2.xcdatamodel */;
 			path = Glimpses.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

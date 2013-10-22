@@ -58,7 +58,7 @@
     self.navigationItem.leftBarButtonItem = left;
     
     // Configure rightButton
-    UIBarButtonItem *right = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:@selector(addAsset:)];
+    UIBarButtonItem *right = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCamera target:self action:@selector(addAsset:)];
     self.navigationItem.rightBarButtonItem = right;
 }
 
@@ -79,14 +79,6 @@
 
 - (IBAction)addAsset:(id)sender
 {
-    /*
-    NSDate *date = [self dateByMovingToBeginningOfDay:[NSDate date]];
-    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"date == %@", date];
-    NSArray *objects = fetchManagedObjects(@"Day", predicate, nil, defaultManagedObjectContext());
-    if ([objects count] > 0 && ![[self dateByMovingToBeginningOfDay:((Day *)objects[0]).date] isEqualToDate: date]) {
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Oops" message:@"You already added a photo today!" delegate:self cancelButtonTitle:@"Roger that." otherButtonTitles:nil, nil];
-        [alert show];
-    } else {*/
     UIActionSheet *action = [[UIActionSheet alloc] initWithTitle:nil delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles:@"Take Photo", @"Choose from library", nil];
     [action showInView:self.tableView];
     //}
@@ -155,6 +147,7 @@
                                    if (createNew) {
                                        Day *day = [Day insertDayWithDate:date
                                                                      URL:[assetURL absoluteString]
+                                                                 comment:nil
                                                                MediaType:@"Photo"
                                                                   Parent:_days];
                                        [_days addChildrenObject:day];
@@ -173,7 +166,11 @@
     {
         // NSLog(@"Save with date: %@", [self dateByMovingToBeginningOfDay:[NSDate date]]);
         if (createNew) {
-        Day *day = [Day insertDayWithDate:[self dateByMovingToBeginningOfDay:[NSDate date]] URL:[[info objectForKey:UIImagePickerControllerReferenceURL] absoluteString] MediaType:@"Photo" Parent:_days];
+        Day *day = [Day insertDayWithDate:[self dateByMovingToBeginningOfDay:[NSDate date]]
+                                      URL:[[info objectForKey:UIImagePickerControllerReferenceURL] absoluteString]
+                                  comment:nil
+                                MediaType:@"Photo"
+                                   Parent:_days];
         [_days addChildrenObject:day];
         } else {
             Day *existingDay = objects[0];
@@ -226,13 +223,6 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
     // Configure the cell...
-    /*
-    Day *day = (Day *)[[self fetchedResultsController] objectAtIndexPath:indexPath];
-    NSLog(@"DAY %d: %@", indexPath.row, day.url);
-    UILabel *title = (UILabel *)[cell viewWithTag:1];
-    title.text = day.url;
-    */
-    
     if (![cell.backgroundView isKindOfClass:[SLPhotoCell class]])
     {
         cell.backgroundView = [[SLPhotoCell alloc] init];
@@ -244,10 +234,8 @@
     }
     cell.backgroundView.opaque = NO;
     cell.selectedBackgroundView.opaque = NO;
-    //cell.backgroundColor = [UIColor blueColor];
 
     [self configureCell:cell atIndexPath:indexPath animated:YES];
-    
     
     return cell;
 }
@@ -255,11 +243,14 @@
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath animated:(BOOL)animated {
 	Day *day = [[self fetchedResultsController] objectAtIndexPath:indexPath];
     NSURL *url = [NSURL URLWithString:day.url];
+    __block ALAsset *cellAsset = nil;
     [_library assetForURL:url resultBlock:^(ALAsset *asset) {
+        cellAsset = asset;
         UIImageView *cellImage = (UIImageView *)[cell viewWithTag:2];
         cellImage.image = [UIImage imageWithCGImage:[asset thumbnail]];
         
-        /*[[NSOperationQueue mainQueue] addOperationWithBlock:^{
+        
+        [[NSOperationQueue mainQueue] addOperationWithBlock:^{
             ALAssetRepresentation *rep = [asset defaultRepresentation];
             NSDictionary *meta = [rep metadata];
             NSLog(@"%@", [meta[@"Orientation"] class]);
@@ -268,7 +259,8 @@
             if (iref) {
                 cell.imageView.image = [UIImage imageWithCGImage:iref scale:1.0 orientation:UIImageOrientationRight];
             }
-        }];*/
+        }];
+        
         
         
     } failureBlock:^(NSError *error) {

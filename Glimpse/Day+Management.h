@@ -7,11 +7,12 @@
 //
 
 #import "Day.h"
+#import "Days.h"
 #import "ModelUtil.h"
 
 @interface Day (Management)
 
-+ (Day *)insertDayWithDate: (NSDate *)date URL: (NSString *)url MediaType: (NSString *)type Parent: (Days *)parent ManagedObjectContext: (NSManagedObjectContext *)moc;
-+ (Day *)insertDayWithDate:(NSDate *)date URL:(NSString *)url MediaType:(NSString *)type Parent: (Days *)parent;
++ (Day *)insertDayWithDate:(NSDate *)date URL:(NSString *)url comment:(NSString *)comment MediaType:(NSString *)type Parent:(Days *)parent ManagedObjectContext: (NSManagedObjectContext *)moc;
++ (Day *)insertDayWithDate:(NSDate *)date URL:(NSString *)url comment:(NSString *)comment MediaType:(NSString *)type Parent:(Days *)parent;
 
 @end
